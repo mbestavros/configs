@@ -1,0 +1,27 @@
+{
+  "Name": "material-dark-guidelines",
+  "Author": "Mark Bestavros",
+  "Colors": {
+    "Foreground": "#A1B0B8",
+    "Background": "#000000",
+    "Cursor": "#EF5350",
+    "CursorAccent": "#708284",
+    "Selection": "rgba(176, 190, 197, 0.30078125)",
+    "Black": "#000000",
+    "Red": "#C62828",
+    "Green": "#43A047",
+    "Yellow": "#FDD835",
+    "Blue": "#1565C0",
+    "Magenta": "#C2185B",
+    "Cyan": "#00838F",
+    "White": "#F5F5F5",
+    "BrightBlack": "#424242",
+    "BrightRed": "#F44336",
+    "BrightGreen": "#8BC34A",
+    "BrightYellow": "#FFEE58",
+    "BrightBlue": "#03A9F4",
+    "BrightMagenta": "#E91E63",
+    "BrightCyan": "#00BCD4",
+    "BrightWhite": "#FFFFFF"
+  }
+}
