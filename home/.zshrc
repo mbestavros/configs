@@ -119,7 +119,12 @@ ls
 #export LSCOLORS=ExFxBxDxCxegedabagacad
 # Functions for things
 
-function cl(){ cd "$@" && ls; }
+# cl: change directory, then list directories
+function cl(){ builtin cd "$@" && ls; }
+
+# Do the same thing in case cd is used.
+function cd() { builtin cd "$@" && ls; }
+
 function cmd(){ /mnt/c/Windows/System32/cmd.exe /C "$@"; }
 function chrome(){ /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe /C "$@"; }
 # Alias to open up Jupyter Notebook (via Windows CMD)
