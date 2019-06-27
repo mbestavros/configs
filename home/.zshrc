@@ -107,9 +107,12 @@ source $ZSH/oh-my-zsh.sh
 #  cd ~
 #fi
 
-# Startup message!
-echo "Welcome to $USER's Surface!"
+# Startup message! Displaying fortune requires the fortune-mod package.
+echo "$USER, welcome to $HOSTNAME!\n"
+fortune
+echo "\n------------------------------------------------"
 ls
+
 
 # Customize the command prompt
 # This displays:
