@@ -138,3 +138,7 @@ alias csa="ssh email@address.com"
 alias clear="clear && ls"
 # Path export for Linux Anaconda3
 export PATH="/home/mark/anaconda3/bin:$PATH"
+
+# Powerlevel9k theme customization
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir newline vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs load ram)
