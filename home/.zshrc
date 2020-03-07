@@ -2,13 +2,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/mark/.oh-my-zsh"
+export ZSH="/home/mbestavr/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -26,8 +26,14 @@ ZSH_THEME="agnoster"
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -62,9 +68,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,46 +103,47 @@ source $ZSH/oh-my-zsh.sh
 
 
 
-#This is the beginning of my personal .bashrc
+# This is the beginning of my personal .bashrc
 
-# Hack to start terminal in ~ instead of Windows home (only necessary on WSL)
-#if [ ${PWD} = "/mnt/c/Users/markb" ];
-#then
-#  cd ~
-#fi
-
-# Startup message! Displaying fortune requires the fortune-mod package.
+# ---Startup message and fortune!---
+# fortune needs to be installed for this to work.
 echo "$USER, welcome to $HOSTNAME!\n"
 fortune
 echo "\n------------------------------------------------"
 ls
 
+# ---Functions and aliases for things---
 
-# Customize the command prompt
-# This displays:
-# Username@CurrentFolder$
-#export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\W\[\033[m\]\$ "
-#export CLICOLOR=1
-#export LSCOLORS=ExFxBxDxCxegedabagacad
-# Functions for things
-
-# cl: change directory, then list directories
+# cl (change and list): change directory, then list directories
 function cl(){ builtin cd "$@" && ls; }
 
 # Do the same thing in case cd is used.
 function cd() { builtin cd "$@" && ls; }
 
-function cmd(){ /mnt/c/Windows/System32/cmd.exe /C "$@"; }
-function chrome(){ /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe /C "$@"; }
-# Alias to open up Jupyter Notebook (via Windows CMD)
-alias jupyter_cmd="cmd jupyter notebook"
-# Shortcut to log on to csa2; change username if necessary!
-alias csa="ssh email@address.com"
 # List directories after clearing console
 alias clear="clear && ls"
+
+# ---Useful git shortcuts---
+
+# git rebase
+alias rebase="git fetch upstream && git rebase upstream/master"
+
+# amend a commit
+alias amend="git add . && git commit --amend && git push -f"
+
+# ---Useful WSL aliases---
+function cmd(){ /mnt/c/Windows/System32/cmd.exe /C "$@"; }
+function chrome(){ /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe /C "$@"; }
+
+# Alias to open up Jupyter Notebook (via Windows CMD)
+alias jupyter_cmd="cmd jupyter notebook"
+
 # Path export for Linux Anaconda3
 export PATH="/home/mark/anaconda3/bin:$PATH"
 
-# Powerlevel9k theme customization
+# Shortcut to log on to SSH; change username and address!
+alias csa="ssh email@address.com"
+
+# ---Powerlevel9k theme customization---
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir newline vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs load ram)
