@@ -142,6 +142,9 @@ alias rebase="git fetch upstream && git rebase upstream/master"
 # amend a commit
 alias amend="git add . && git commit --amend && git push -f"
 
+# rebase --continue
+alias continue="git add . && git rebase --continue"
+
 # ---Useful WSL aliases---
 function cmd(){ /mnt/c/Windows/System32/cmd.exe /C "$@"; }
 function chrome(){ /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe /C "$@"; }
