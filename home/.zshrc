@@ -118,7 +118,7 @@ source $ZSH/oh-my-zsh.sh
 
 # ---Startup message and fortune!---
 # fortune needs to be installed for this to work.
-echo "$USER, welcome to $HOSTNAME!\n"
+echo "$(whoami), welcome to $(uname -n)!\n"
 fortune
 echo "\n------------------------------------------------"
 ls
@@ -156,12 +156,6 @@ alias continue="git add . && git rebase --continue"
 # ---Useful WSL aliases---
 function cmd(){ /mnt/c/Windows/System32/cmd.exe /C "$@"; }
 function chrome(){ /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe /C "$@"; }
-
-# Alias to open up Jupyter Notebook (via Windows CMD)
-alias jupyter_cmd="cmd jupyter notebook"
-
-# Path export for Linux Anaconda3
-export PATH="/home/mark/anaconda3/bin:$PATH"
 
 # Shortcut to log on to SSH; change username and address!
 alias csa="ssh email@address.com"
