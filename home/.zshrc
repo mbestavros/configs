@@ -134,6 +134,14 @@ function cd() { builtin cd "$@" && ls; }
 # List directories after clearing console
 alias clear="clear && ls"
 
+# ---Update aliases---
+
+# Ubuntu
+# alias update="sudo apt update && sudo apt upgrade"
+
+# Fedora
+# alias update="fwupdmgr update && sudo dnf upgrade"
+
 # ---Useful git shortcuts---
 
 # git rebase
