@@ -1,3 +1,3 @@
-# Shell configurations: `bash` and `oh-my-zsh`
+# Custom dotfile additions
 
-Contained in the `home` directory are the `.bashrc` and `.zshrc` files; the latter is configured to work with [`oh-my-zsh`](https://github.com/robbyrussell/oh-my-zsh). To use, copy one or both into your home (or `~`) directory.
+The `.zshrc` file contains common dotfile additions I make, including aliases and functions. To use, append the contents to a dotfile (such as `zshrc`).
