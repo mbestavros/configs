@@ -24,7 +24,7 @@ alias clear="clear && ls"
 # alias update="sudo apt update && sudo apt upgrade"
 
 # Fedora
-# alias update="fwupdmgr update && sudo dnf upgrade"
+# alias update="sudo fwupdmgr update; sudo dnf upgrade"
 
 # ---Useful git shortcuts---
 
