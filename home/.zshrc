@@ -29,7 +29,7 @@ alias clear="clear && ls"
 # ---Useful git shortcuts---
 
 # git rebase
-alias rebase="git fetch upstream && git rebase upstream/master"
+alias rebase="git fetch upstream && (git rebase upstream/main || git rebase upstream/master)"
 
 # amend a commit
 alias amend="git add . && git commit --amend && git push -f"
