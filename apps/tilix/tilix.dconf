@@ -1,0 +1,22 @@
+[/]
+prompt-on-close=true
+theme-variant='dark'
+window-save-state=true
+window-state=43908
+
+[profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+background-color='#222324'
+badge-color-set=false
+bold-color-set=false
+cursor-colors-set=false
+cursor-shape='ibeam'
+default-size-columns=511
+default-size-rows=511
+font='MesloLGS NF 14'
+foreground-color='#BABABA'
+highlight-colors-set=false
+login-shell=true
+palette=['#000000', '#E8341C', '#68C256', '#F2D42C', '#1C98E8', '#8E69C9', '#1C98E8', '#BABABA', '#9A9A99999696', '#E05A4F', '#77B869', '#EFD64B', '#387CD3', '#957BBE', '#3D97E2', '#BABABA']
+use-system-font=false
+use-theme-colors=true
+visible-name='Default'

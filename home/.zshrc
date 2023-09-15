@@ -24,7 +24,7 @@ alias clear="clear && ls"
 # alias update="sudo apt update && sudo apt upgrade"
 
 # Fedora
-# alias update="sudo fwupdmgr update; sudo dnf upgrade"
+# alias update="sudo fwupdmgr update; sudo dnf upgrade --refresh; flatpak update -y"
 
 # ---Useful git shortcuts---
 
@@ -38,8 +38,11 @@ alias amend="git add . && git commit --amend && git push -f"
 alias continue="git add . && git rebase --continue"
 
 # ---Useful WSL aliases---
-function cmd(){ /mnt/c/Windows/System32/cmd.exe /C "$@"; }
-function chrome(){ /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe /C "$@"; }
+#function cmd(){ /mnt/c/Windows/System32/cmd.exe /C "$@"; }
+#function chrome(){ /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe /C "$@"; }
 
 # Shortcut to log on to SSH; change username and address!
-alias csa="ssh email@address.com"
+#alias csa="ssh email@address.com"
+
+export PATH="/home/mbestavros/go/bin:$PATH"
+export PATH=$PATH:/usr/local/go/bin
