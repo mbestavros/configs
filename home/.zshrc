@@ -26,6 +26,8 @@ alias clear="clear && ls"
 # Fedora
 # alias update="sudo fwupdmgr update; sudo dnf upgrade --refresh; flatpak update -y"
 
+# Other update commands: ; asdf update; asdf plugin update --all
+
 # ---Useful git shortcuts---
 
 # git rebase
@@ -44,5 +46,10 @@ alias continue="git add . && git rebase --continue"
 # Shortcut to log on to SSH; change username and address!
 #alias csa="ssh email@address.com"
 
-export PATH="/home/mbestavros/go/bin:$PATH"
+# Go env variables
+export PATH="/home/USERNAME/go/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin
+
+# Setup asdf
+# . "$HOME/.asdf/asdf.sh"
+# . ~/.asdf/plugins/golang/set-env.zsh
