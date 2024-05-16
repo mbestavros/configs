@@ -46,9 +46,13 @@ alias continue="git add . && git rebase --continue"
 # Shortcut to log on to SSH; change username and address!
 #alias csa="ssh email@address.com"
 
-# Go env variables
-export PATH="/home/USERNAME/go/bin:$PATH"
-export PATH=$PATH:/usr/local/go/bin
+# Path exports
+export PATH="$PATH:/home/USERNAME/go/bin"
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:$HOME/.local/bin"
+
+# Optional user bin directory
+export PATH="$PATH:/home/USERNAME/bin"
 
 # Setup asdf
 # . "$HOME/.asdf/asdf.sh"

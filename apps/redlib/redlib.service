@@ -10,6 +10,8 @@ After=network.service
 # Optional Override
 #EnvironmentFile=-/etc/redlib.conf
 ExecStart=redlib -p 7333
+Restart=always
+RuntimeMaxSec=8h
 
 # Hardening
 DeviceAllow=
