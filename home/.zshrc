@@ -57,3 +57,6 @@ export PATH="$PATH:/home/USERNAME/bin"
 # Setup asdf
 # . "$HOME/.asdf/asdf.sh"
 # . ~/.asdf/plugins/golang/set-env.zsh
+
+# Restart redlib
+alias restart-redlib="systemctl stop --user redlib.service && systemctl start --user redlib.service"
