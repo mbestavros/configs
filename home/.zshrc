@@ -47,12 +47,12 @@ alias continue="git add . && git rebase --continue"
 #alias csa="ssh email@address.com"
 
 # Path exports
-export PATH="$PATH:/home/USERNAME/go/bin"
 export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
 # Optional user bin directory
-export PATH="$PATH:/home/USERNAME/bin"
+export PATH="$PATH:$HOME/bin"
 
 # Setup asdf
 # . "$HOME/.asdf/asdf.sh"
