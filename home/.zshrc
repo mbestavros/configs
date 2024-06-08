@@ -52,8 +52,9 @@ export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
 
-# Optional user bin directory
+# Optional user bin directories
 export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/.bin"
 
 # Setup asdf
 # . "$HOME/.asdf/asdf.sh"
