@@ -24,7 +24,7 @@ alias clear="clear && ls"
 # alias update="sudo apt update && sudo apt upgrade"
 
 # Fedora
-# alias update="sudo fwupdmgr update; sudo dnf upgrade --refresh; flatpak update -y"
+# alias update="sudo fwupdmgr refresh; sudo fwupdmgr update; sudo dnf upgrade --refresh; flatpak update -u -y"
 
 # Other update commands: ; asdf update; asdf plugin update --all
 
