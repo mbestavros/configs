@@ -221,7 +221,7 @@ Exec=/usr/bin/google-chrome-stable --enable-features=VaapiVideoDecodeLinuxGL,Vaa
 MimeType=x-scheme-handler/unknown;x-scheme-handler/about;application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;
 
 # Intel graphics feature enablement slug:
-# --enable-features=VaapiVideoDecodeLinuxGL,VaapiVideoEncoder,TouchpadOverscrollHistoryNavigation,MiddleClickAutoscroll --ozone-platform=wayland --start-maximized
+# --enable-features=AcceleratedVideoDecodeLinuxGL,TouchpadOverscrollHistoryNavigation,MiddleClickAutoscroll --ozone-platform=wayland --start-maximized
 
 # AMD graphics feature enablement slug:
 # --enable-features=VaapiVideoDecoder,VaapiVideoEncoder,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE,TouchpadOverscrollHistoryNavigation,MiddleClickAutoscroll --ozone-platform=wayland --start-maximized
