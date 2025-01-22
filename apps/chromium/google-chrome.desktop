@@ -224,4 +224,4 @@ MimeType=x-scheme-handler/unknown;x-scheme-handler/about;application/pdf;applica
 # --enable-features=AcceleratedVideoDecodeLinuxGL,TouchpadOverscrollHistoryNavigation,MiddleClickAutoscroll --ozone-platform=wayland --start-maximized
 
 # AMD graphics feature enablement slug:
-# --enable-features=VaapiVideoDecoder,VaapiVideoEncoder,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE,TouchpadOverscrollHistoryNavigation,MiddleClickAutoscroll --ozone-platform=wayland --start-maximized
+#  --enable-features=AcceleratedVideoDecodeLinuxZeroCopyGL,AcceleratedVideoDecodeLinuxGL,VaapiIgnoreDriverChecks,TouchpadOverscrollHistoryNavigation,MiddleClickAutoscroll --ozone-platform=wayland --start-maximized
