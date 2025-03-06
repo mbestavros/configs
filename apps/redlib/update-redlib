@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Update to location of Redlib repo
+REDLIB_GIT_REPO=""
+
+cd $REDLIB_GIT_REPO
+git fetch upstream && git rebase upstream/main
+cargo build --release
+cp -f target/release/redlib ~/.local/bin
+systemctl --user stop redlib.service && systemctl --user start redlib.service
