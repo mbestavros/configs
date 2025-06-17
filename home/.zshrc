@@ -64,4 +64,4 @@ export PATH="$PATH:$HOME/.bin"
 alias restart-redlib="systemctl stop --user redlib.service && systemctl start --user redlib.service"
 
 # Start shizuku
-alias shizuku="adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh"
+alias shizuku="adb shell /data/app/~~s75XuJKoqxhiIJlul23grw==/moe.shizuku.privileged.api-66TGobX1FuI_UdXuPAk3-A==/lib/arm64/libshizuku.so"
