@@ -1,0 +1,5 @@
+# Intel graphics feature enablement slug:
+--enable-features=AcceleratedVideoDecodeLinuxGL,TouchpadOverscrollHistoryNavigation,MiddleClickAutoscroll --ozone-platform=wayland --start-maximized
+
+# AMD graphics feature enablement slug:
+--enable-features=AcceleratedVideoDecodeLinuxZeroCopyGL,AcceleratedVideoDecodeLinuxGL,AcceleratedVideoEncoder,VaapiVideoDecoder,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE,TouchpadOverscrollHistoryNavigation,MiddleClickAutoscroll --disable-features=GlobalShortcutsPortal --ozone-platform=wayland --start-maximized
