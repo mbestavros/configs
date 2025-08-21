@@ -1,6 +1,6 @@
-# This is the beginning of my personal .bashrc
+# These are more esoteric .zshrc tweaks that may require additional setup.
 
-# ---Startup message and fortune!---
+# ---Startup message and fortune---
 # fortune needs to be installed for this to work.
 echo "$(whoami), welcome to $(uname -n)!\n"
 fortune
@@ -8,15 +8,6 @@ echo "\n------------------------------------------------"
 ls
 
 # ---Functions and aliases for things---
-
-# cl (change and list): change directory, then list directories
-function cl(){ builtin cd "$@" && ls; }
-
-# Do the same thing in case cd is used.
-function cd() { builtin cd "$@" && ls; }
-
-# List directories after clearing console
-alias clear="clear && ls"
 
 # ---Update aliases---
 
@@ -29,15 +20,6 @@ alias clear="clear && ls"
 # Other update commands: ; asdf update; asdf plugin update --all
 
 # ---Useful git shortcuts---
-
-# git rebase
-alias rebase="git fetch upstream && (git rebase upstream/main || git rebase upstream/master)"
-
-# amend a commit
-alias amend="git add . && git commit --amend && git push -f"
-
-# rebase --continue
-alias continue="git add . && git rebase --continue"
 
 # ---Useful WSL aliases---
 #function cmd(){ /mnt/c/Windows/System32/cmd.exe /C "$@"; }
