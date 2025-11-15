@@ -1,22 +1,94 @@
 [/]
 prompt-on-close=true
+prompt-on-delete-profile=true
+recent-session-files=['/home/markb/Documents/tilix/ai-gen-config-smart.json', '/home/markb/Documents/tilix/ai-gaming-config.json', '/home/markb/Documents/tilix/secure-browsing-config.json', '/home/markb/Documents/tilix/ai-gen-config-smart-new.json', '/home/markb/Documents/tilix/ai-gaming-config-2.json', '/home/markb/Documents/tilix/ai-gen-config.json', '/home/markb/.local/share/tilix/secure-browsing-config.json', '/home/markb/.local/share/tilix/ai-gen-config.json']
+tab-position='left'
 theme-variant='dark'
 window-save-state=true
 window-state=43908
 
+[profiles]
+list=['2b7c4080-0ddd-46c5-8f23-563fd3ba789d', '23ef7e08-844e-4235-8cf5-55f0dadd8e8e']
+
+[profiles/23ef7e08-844e-4235-8cf5-55f0dadd8e8e]
+allow-bold=true
+automatic-switch=@as []
+background-color='#222324'
+background-transparency-percent=0
+backspace-binding='ascii-delete'
+badge-color='#AC7EA8'
+badge-color-set=false
+badge-font='Monospace 12'
+badge-position='northeast'
+badge-text=''
+badge-use-system-font=true
+bold-color='#ffffff'
+bold-color-set=false
+bold-is-bright=true
+cell-height-scale=1.0
+cell-width-scale=1.0
+cjk-utf8-ambiguous-width='narrow'
+cursor-background-color='#000000'
+cursor-blink-mode='system'
+cursor-colors-set=false
+cursor-foreground-color='#ffffff'
+cursor-shape='ibeam'
+custom-command=''
+custom-hyperlinks=@as []
+default-size-columns=511
+default-size-rows=511
+delete-binding='delete-sequence'
+dim-transparency-percent=0
+draw-margin=80
+encoding='UTF-8'
+exit-action='hold'
+font='MesloLGS NF 14'
+foreground-color='#BABABA'
+highlight-background-color='#000000'
+highlight-colors-set=false
+highlight-foreground-color='#ffffff'
+login-shell=false
+notify-silence-enabled=false
+notify-silence-threshold=0
+palette=['#000000', '#E8341C', '#68C256', '#F2D42C', '#1C98E8', '#8E69C9', '#1C98E8', '#BABABA', '#000000', '#E05A4F', '#77B869', '#EFD64B', '#387CD3', '#957BBE', '#3D97E2', '#BABABA']
+rewrap-on-resize=true
+scroll-on-keystroke=true
+scroll-on-output=false
+scrollback-lines=8192
+scrollback-unlimited=false
+select-by-word-chars='-,./?%&#:_'
+shortcut='disabled'
+show-scrollbar=true
+terminal-bell='sound'
+terminal-title='${id}: ${title}'
+text-blink-mode='always'
+triggers=@as []
+use-custom-command=false
+use-system-font=false
+use-theme-colors=true
+visible-name='Layouts'
+
 [profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
 background-color='#222324'
+background-transparency-percent=0
 badge-color-set=false
 bold-color-set=false
 cursor-colors-set=false
 cursor-shape='ibeam'
 default-size-columns=511
 default-size-rows=511
+dim-transparency-percent=0
 font='MesloLGS NF 14'
 foreground-color='#BABABA'
 highlight-colors-set=false
 login-shell=true
-palette=['#000000', '#E8341C', '#68C256', '#F2D42C', '#1C98E8', '#8E69C9', '#1C98E8', '#BABABA', '#9A9A99999696', '#E05A4F', '#77B869', '#EFD64B', '#387CD3', '#957BBE', '#3D97E2', '#BABABA']
+notify-silence-enabled=false
+palette=['#000000', '#E8341C', '#68C256', '#F2D42C', '#1C98E8', '#8E69C9', '#1C98E8', '#BABABA', '#000000', '#E05A4F', '#77B869', '#EFD64B', '#387CD3', '#957BBE', '#3D97E2', '#BABABA']
 use-system-font=false
 use-theme-colors=true
 visible-name='Default'
+
+[profiles/8f3aa093-9f09-4f49-bcbc-07604260ec8d]
+bold-color-same-as-fg=true
+use-theme-background=false
+use-theme-transparency=false
