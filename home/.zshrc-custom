@@ -4,7 +4,7 @@
 # fortune needs to be installed for this to work.
 echo "$(whoami), welcome to $(uname -n)!\n"
 fortune
-echo "\n------------------------------------------------"
+echo "\n"
 ls
 
 # ---Functions and aliases for things---
