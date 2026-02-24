@@ -17,9 +17,10 @@ ls
 # Fedora
 # alias update="sudo fwupdmgr refresh; sudo fwupdmgr update; sudo dnf upgrade --refresh; flatpak update -u -y"
 
-# Other update commands: ; asdf update; asdf plugin update --all
+# macOS
+# alias update="brew update && brew upgrade && brew cleanup"
 
-# ---Useful git shortcuts---
+# Other update commands: ; asdf update; asdf plugin update --all
 
 # ---Useful WSL aliases---
 #function cmd(){ /mnt/c/Windows/System32/cmd.exe /C "$@"; }
@@ -47,3 +48,11 @@ alias restart-redlib="systemctl stop --user redlib.service && systemctl start --
 
 # Start shizuku
 alias shizuku="adb shell /data/app/~~s75XuJKoqxhiIJlul23grw==/moe.shizuku.privileged.api-66TGobX1FuI_UdXuPAk3-A==/lib/arm64/libshizuku.so"
+
+# zsh-syntax-highlighting (check OS-specific install instructions)
+
+# macOS
+# source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Fedora
+# source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

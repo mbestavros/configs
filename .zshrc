@@ -108,8 +108,8 @@ source $ZSH/oh-my-zsh.sh
 # ---Personal tweaks---
 
 # ---Startup message---
-echo "$(whoami), welcome to $(uname -n)!\n"
-echo "------------------------------------------------"
+echo "$(whoami), welcome to $(uname -n)!"
+echo "--------------------------------\n"
 ls
 
 # ---Functions and aliases for things---
