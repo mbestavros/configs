@@ -20,6 +20,8 @@ ls
 # macOS
 # alias update="brew update && brew upgrade && brew cleanup"
 
+# alias dev-update="rustup update; uv self update; npm update"
+
 # Other update commands: ; asdf update; asdf plugin update --all
 
 # ---Useful WSL aliases---
