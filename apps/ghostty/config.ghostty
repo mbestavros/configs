@@ -1,0 +1,4 @@
+cursor-style = bar
+maximize = true
+font-size = 16
+config-file = ?auto/theme.ghostty
