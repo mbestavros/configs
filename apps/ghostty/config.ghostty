@@ -2,3 +2,14 @@ cursor-style = bar
 maximize = true
 font-size = 16
 config-file = ?auto/theme.ghostty
+
+# MacOS specific keybinds
+# keybind = cmd+shift+r=new_split:right
+
+# Linux specific keybinds
+# keybind = alt+[=goto_split:previous
+# keybind = alt+]=goto_split:next
+# keybind = alt+shift+[=previous_tab
+# keybind = alt+shift+]=next_tab
+# keybind = alt+shift+d=new_split:down
+# keybind = alt+shift+r=new_split:right
