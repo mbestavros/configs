@@ -7,6 +7,7 @@ config-file = ?auto/theme.ghostty
 # keybind = cmd+shift+r=new_split:right
 
 # Linux specific keybinds
+# confirm-close-surface = false
 # keybind = alt+[=goto_split:previous
 # keybind = alt+]=goto_split:next
 # keybind = alt+shift+[=previous_tab
