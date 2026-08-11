@@ -2,11 +2,12 @@ cursor-style = bar
 maximize = true
 font-size = 16
 config-file = ?auto/theme.ghostty
+shell-integration-features = ssh-env,ssh-terminfo
 
-# MacOS specific keybinds
+# MacOS specific config
 # keybind = cmd+shift+r=new_split:right
 
-# Linux specific keybinds
+# Linux specific config
 # confirm-close-surface = false
 # keybind = alt+[=goto_split:previous
 # keybind = alt+]=goto_split:next
