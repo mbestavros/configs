@@ -20,7 +20,7 @@ ls
 # macOS
 # alias update="brew update && brew upgrade && brew cleanup"
 
-# alias dev-update="rustup update; uv self update; npm update"
+# alias dev-update="rustup update; uv self update; npm update; pi update && pi update --extensions"
 
 # Other update commands: ; asdf update; asdf plugin update --all
 
@@ -50,6 +50,9 @@ alias restart-redlib="systemctl stop --user redlib.service && systemctl start --
 
 # Start shizuku
 alias shizuku="adb shell /data/app/~~s75XuJKoqxhiIJlul23grw==/moe.shizuku.privileged.api-66TGobX1FuI_UdXuPAk3-A==/lib/arm64/libshizuku.so"
+
+# Random configuration
+export MCP_UI_VIEWER=none
 
 # zsh-syntax-highlighting (check OS-specific install instructions)
 
